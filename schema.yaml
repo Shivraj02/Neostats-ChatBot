@@ -1,0 +1,44 @@
+text:
+  - name: content
+    no_index: false
+    no_stem: false
+    sortable: false
+    weight: 1
+    withsuffixtrie: false
+
+  - name: pdf_path
+    no_index: false
+    no_stem: true
+    sortable: true
+    weight: 1
+    withsuffixtrie: false
+    type: TAG
+
+  - name: page
+    no_index: false
+    no_stem: true
+    sortable: true
+    weight: 1
+    withsuffixtrie: false
+
+  - name: doc_type
+    no_index: false
+    no_stem: true
+    sortable: true
+    weight: 1
+    withsuffixtrie: false
+    type: TAG
+
+numeric:
+  - name: date
+    no_index: false
+    sortable: true
+    weight: 1
+    withsuffixtrie: false
+    
+vector:
+- name: content_vector
+  algorithm: HNSW
+  datatype: FLOAT32
+  dims: 1536
+  distance_metric: COSINE

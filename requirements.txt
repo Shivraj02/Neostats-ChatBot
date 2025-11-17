@@ -1,0 +1,10 @@
+streamlit
+redis==5.0.1
+langchain
+langchain-community
+langchain-core
+langchain-google-genai
+tavily-python
+numpy
+python-dotenv
+pypdf
